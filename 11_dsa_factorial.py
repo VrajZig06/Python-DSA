@@ -6,4 +6,7 @@ def fac(n):
     
     return n * fac(n - 1)
 
+# Time Compexity: O(n)
+# Space Complexity: O(n) -> Stack Space
+
 print(fac(5))
