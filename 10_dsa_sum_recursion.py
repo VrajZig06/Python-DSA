@@ -14,10 +14,9 @@ sum_nums(1, 5, 0)
 
 # Functional Sum
 def functonal_sum(n):
-    sum = 0
-    if n == 0:
-        return 0
+    if n == 1:
+        return 1
 
-    return sum + functonal_sum(n - 1)
+    return n + functonal_sum(n - 1)
 
 functonal_sum(5)
