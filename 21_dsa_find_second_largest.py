@@ -1,6 +1,6 @@
 # Problem: Find Second largest element from the array without sorting
 
-arr = [3,4,5,1,2,3,8,9,10]
+arr =[10, 10, 10]
 
 def second_largest(arr):
   first_largest = float("-inf")
@@ -10,6 +10,8 @@ def second_largest(arr):
     if second_largest < arr[i]:
       if first_largest < second_largest:
         first_largest = second_largest
+      else:
+        return - 1
 
       second_largest = arr[i]
 
