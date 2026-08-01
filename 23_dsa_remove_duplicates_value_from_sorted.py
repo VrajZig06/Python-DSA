@@ -28,7 +28,4 @@ def optimal_sol(arr):
 
   return arr[:i + 1]
 
-    
-
-
 print(optimal_sol(arr))
